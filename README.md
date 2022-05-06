@@ -24,7 +24,7 @@ or
 
 `bundle install`
 
-##Run the rails server
+## Run the rails server
 
 Run the command:
 
@@ -35,7 +35,7 @@ or
 `rails server`
 
 
-##Run tests
+## Run tests
 
 Run the command:
 
@@ -53,7 +53,7 @@ or
 
 `npm install`
 
-##Run the react server
+## Run the react server
 
 Run the command:
 
