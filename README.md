@@ -14,6 +14,9 @@ For testing I went with:
 
 # How to review the backend code:
 
+# First of all
+cd into *backend* folder
+
 ## Install the required gems
 
 Run the command: 
@@ -42,6 +45,9 @@ Run the command:
 `bundle exec rspec`
 
 # How to review the frontend code:
+
+# First of all
+cd into *frontend* folder
 
 ## Install the packages
 
