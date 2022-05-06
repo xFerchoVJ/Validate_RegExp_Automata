@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  .big_text{
+    font-size: 68px;
+  }
+
+  .top{
+    margin-top: 200px;
+  }
+}
