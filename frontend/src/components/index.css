@@ -4,6 +4,10 @@
   }
 
   .top{
-    margin-top: 200px;
+    margin-top: 50px;
+  }
+  .img_fluida{
+    height: 400px;
+    margin-top: 20px;
   }
 }
