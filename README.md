@@ -57,5 +57,5 @@ or
 
 Run the command:
 
-`rnpm run dev`
+`npm run dev`
 
