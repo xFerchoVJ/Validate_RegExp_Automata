@@ -1,13 +1,16 @@
 import { useState } from "react";
 import axios from "axios";
 import Alerta from "./Alert";
+import Spinner from "./Spinner";
 
 const Form = () => {
   const url = `${import.meta.env.VITE_API_URL}`;
   const [input, setInput] = useState("");
   const [alert, setAlert] = useState({});
+  const [loading, setLoading] = useState(false);
   const handleInput = (e) => setInput(e.target.value);
   const handleSubmit = async (e) => {
+    setLoading(true);
     e.preventDefault();
     if (input === "") {
       setAlert({
@@ -31,11 +34,17 @@ const Form = () => {
         error: true,
       });
     }
+    setLoading(false);
+
+    setTimeout(() => {
+      setAlert({});
+    }, 5000);
   };
   const { msg } = alert;
   return (
     <form onSubmit={handleSubmit}>
       {msg && <Alerta alerta={alert} />}
+      {loading && <Spinner />}
       <div className="mt-4 row shadow-lg p-3 rounded">
         <label htmlFor="inputString" className="col-form-label fs-1">
           Cadena
